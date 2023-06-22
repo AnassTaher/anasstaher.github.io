@@ -1,0 +1,57 @@
+/* nav */
+.nav-right {
+  justify-content: right;
+  padding-right: 3rem;
+}
+
+/* layer1 */
+
+.grid-lay1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 3rem;
+  gap: 1rem;
+}
+
+.sts-chars-hdr {
+  margin: 2rem 0;
+}
+
+.sts-descript {
+  width: 75ch;
+}
+
+.sts-btn-wrap {
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+  background-color: #5d5065;
+  padding: 1em 4em;
+  margin-top: 2rem;
+}
+
+.sts-img{
+    border-radius: 1rem;
+}
+
+
+/* layer2 */
+
+.sts-chars {
+  margin: 0 2rem;
+}
+
+.sts-chars p {
+  margin: 1rem 0;
+}
+
+.sts-chars-img {
+  width: 90%;
+  border: 0.5rem solid black;
+  border-radius: 4rem;
+  aspect-ratio: 3/2;
+}
+
+.sts-chars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
