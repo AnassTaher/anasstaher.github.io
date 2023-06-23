@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "name": "rock",
+      "image": "images/rock.png",
+      "wins" : "scissors",
+      "audio_win" : "audios/rock-win.mp3",
+      "audio_lose" : "audios/rock-lose.mp3"
+    },
+    {
+      "name": "paper",
+      "image": "images/paper.png",
+      "wins" : "rock",
+      "audio_win" : "audios/paper-win.ogg",
+      "audio_lose" : "audios/paper-lose.ogg"
+    },
+    {
+      "name": "scissors",
+      "image": "images/scissors.png",
+      "wins" : "paper",
+      "audio_win" : "audios/scissors-win.ogg",
+      "audio_lose" : "audios/scissors-lose.ogg",
+      "audio_special" : "audios/scissors-rock-win.ogg"
+    }
+  ]
+}

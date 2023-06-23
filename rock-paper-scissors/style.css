@@ -1,0 +1,54 @@
+
+/* Win/Loss outcome */
+
+#match-outcome {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* scores */
+
+.score{
+  margin: 1em;
+  font-size: 2rem;
+}
+
+/* players */
+
+.players-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--clr-game);
+  padding: 1rem;
+  border-radius: 4rem;
+}
+
+.players-container img {
+  width: 80%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+#player2 img {
+  transform: rotateY(180deg);
+}
+
+/* player choices */
+
+#player-choices :not(img) {
+  text-align: center;
+}
+
+#player-choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem;
+}
+
+#player-choices img {
+  width: 80%;
+  aspect-ratio: 4 / 2;
+  object-fit: contain;
+  margin: 0 auto;
+}

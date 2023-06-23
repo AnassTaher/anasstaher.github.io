@@ -1,0 +1,38 @@
+:root {
+  --clr-body: #060e1f;
+  --clr-game: #092949;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: whitesmoke;
+  font-family: system-ui;
+}
+
+main {
+  margin: 2rem;
+}
+
+body{
+  background-color: var(--clr-body);
+}
+
+
+img {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.txt-center{
+  text-align: center;
+}

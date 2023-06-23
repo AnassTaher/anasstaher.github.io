@@ -1,0 +1,1 @@
+All the sounds can be found on the league of legends wiki site: https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki
