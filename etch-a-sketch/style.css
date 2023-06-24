@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: system-ui;
+}
+
+main{
+  /* put it in the middle of the html page */
+  display: flex;
+  justify-content: center;  
+  gap: 5rem;
+  margin-top: 10rem;
+}
+
+input[type="text"]{
+  text-align: center;
+}
+
+.settings{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 10rem;
+}
+
+#canvas{
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+}
+
