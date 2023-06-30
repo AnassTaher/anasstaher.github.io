@@ -9,6 +9,7 @@ let mouseDown = false;
 
 
 
+
 const handleItem = (e) => {
   if (e.type === 'mouseover' && !mouseDown) return;
   console.log(e);
@@ -18,7 +19,6 @@ const handleItem = (e) => {
 
 const drawGrid = () => {
   const grid = document.getElementById('grid');
-  grid.innerHTML = "";
   for(let i = 0; i < rows * columns; i++) {
     const item = document.createElement('div');
     item.classList.add('grid-item');
@@ -42,11 +42,11 @@ const handleInput = (e) => {
       break;
     case "color":
       color = val; 
-      break;
+      return;
     default:
       break;
   }
-
+  clearGrid();
   drawGrid();
 };
 
@@ -72,6 +72,7 @@ Array.prototype.forEach.call(buttons, child => {
   child.addEventListener("click", handleButton);
 });
 
+const clearGrid = () => (document.getElementById('grid').innerHTML = "");
 document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
 
