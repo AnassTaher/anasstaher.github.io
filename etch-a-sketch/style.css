@@ -6,6 +6,13 @@
   padding: 0;
 }
 
+/* create rows,columns var based on the input value from thme */
+
+:root{
+  --clr-grid-item: #4a4040;
+}
+
+
 html{
   font-family: system-ui;
 }
@@ -26,12 +33,23 @@ input[type="text"]{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 10rem;
 }
 
-#canvas{
+#grid{
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
   width: 30%;
   aspect-ratio: 1/1;
   border: 3px solid black;
 }
 
+.grid-item{
+  background-color: white;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.txt-input{
+  display: flex;
+  gap: 1rem;
+}

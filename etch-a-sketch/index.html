@@ -10,13 +10,19 @@
   <body>
     <main>
       <div class="settings">
-        <input type="color" id="color" class="input" />
-        <input type ="text" id="rows" class="rows" placeholder="rows" />
-        <input type ="text" id="columns" class="columns" placeholder="columns" />
-        <button id="eraser" class="input">Eraser</button>
-        <button id="clear" class="input">Clear</button>
+        <input type="color" id="color" value="#4a4040"/>
+        <div class="txt-input">
+          <label for="rows">Rows</label>
+          <input type="text" id="rows" value="5" />
+        </div>
+        <div class="txt-input">
+          <label for="columns">Columns</label>
+          <input type="text" id="columns" value="5"/>
+        </div>
+        <button id="eraser">Eraser</button>
+        <button id="clear">Clear</button>
       </div>
-      <div id="canvas"></div>
+      <div id="grid"></div>
     </main>
   </body>
 </html>
