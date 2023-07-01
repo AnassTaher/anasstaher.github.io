@@ -53,6 +53,7 @@ const handleInput = (e) => {
 const handleButton = (e) => {
 
   if(e.target.id === "clear") {
+    clearGrid();
     drawGrid();
   } else if(e.target.id === "eraser"){
     console.log("eraser");
