@@ -1,11 +1,16 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
-body{
+body {
   font-family: system-ui;
   font-size: 1.5rem;
 }
 
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,23 +18,38 @@ main{
   background-color: lightgrey;
 }
 
-#display{
-  text-align: center;
+#display {
+  text-align: right;
+  width: 30ch;
   margin-bottom: 1rem;
   background-color: grey;
+  border: 3px solid black;
 }
 
-#buttons{
+/*  select first p child */
+#history{
+  margin-bottom: 1rem;
+}
+
+#result{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+
+
+#buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
-button{
+button {
   font-size: 2rem;
   font-weight: bolder;
 }
 
-[data-op="="]{
+[data-op="="] {
   background-color: darkgray;
 }
+
